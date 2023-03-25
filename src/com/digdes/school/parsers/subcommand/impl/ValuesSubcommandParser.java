@@ -39,7 +39,7 @@ public class ValuesSubcommandParser implements SubcommandParser {
                 throw new NoCollectionReferenceInValueException(operation);
             } else {
                 valuesToProcess.put(
-                        values[0].substring(1, values[0].length() - 1),
+                        values[0].substring(1, values[0].length() - 1).toLowerCase(),
                         Utils.parseValue(values[1])
                 );
             }

@@ -50,7 +50,7 @@ public class NotEqualsOperator implements ComparableOperator {
         if (first instanceof String firstString && fieldsTypes.containsKey(firstString)) {
             hasFound = true;
 
-            rowFieldName = firstString;
+            rowFieldName = firstString.toLowerCase();
             compareValue = second;
         }
 
@@ -60,7 +60,7 @@ public class NotEqualsOperator implements ComparableOperator {
             } else {
                 hasFound = true;
 
-                rowFieldName = secondString;
+                rowFieldName = secondString.toLowerCase();
                 compareValue = first;
             }
         }

@@ -45,7 +45,7 @@ public class LikeOperator implements ComparableOperator {
         if (second == null) throw new NullValueInComparisonException(getOperation());
 
         if (first instanceof String firstString && fieldsTypes.containsKey(firstString)) {
-            rowFieldName = firstString;
+            rowFieldName = firstString.toLowerCase();
         } else {
             throw new NoCollectionReferenceInComparisonException(getOperation());
         }

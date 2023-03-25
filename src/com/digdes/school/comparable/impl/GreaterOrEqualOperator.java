@@ -63,7 +63,7 @@ public class GreaterOrEqualOperator implements ComparableOperator {
 
             isRowFieldWasLeft = true;
 
-            rowFieldName = firstString;
+            rowFieldName = firstString.toLowerCase();
             compareValue = second;
         }
 
@@ -75,7 +75,7 @@ public class GreaterOrEqualOperator implements ComparableOperator {
 
                 isRowFieldWasLeft = false;
 
-                rowFieldName = secondString;
+                rowFieldName = secondString.toLowerCase();
                 compareValue = first;
             }
         }

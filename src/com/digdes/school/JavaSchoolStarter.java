@@ -41,7 +41,7 @@ public class JavaSchoolStarter {
         Repository repository = Repository.getInstance();
         repository.setup(Map.of(
                 "id", Long.class.getName(),
-                "lastName", String.class.getName(),
+                "lastname", String.class.getName(),
                 "age", Long.class.getName(),
                 "cost", Double.class.getName(),
                 "active", Boolean.class.getName()
