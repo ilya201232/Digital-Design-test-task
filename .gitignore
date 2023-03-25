@@ -6,6 +6,8 @@ target/
 
 *.db
 
+out/
+
 ### STS ###
 .apt_generated
 .classpath
